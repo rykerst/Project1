@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var text string
-	fmt.Scan(&text)
+	var text int
+	_, err := fmt.Scan(&text)
+	if err != nil {
+		fmt.Println(err)
+	}
 	fmt.Println(text)
 }
