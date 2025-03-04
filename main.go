@@ -6,7 +6,8 @@ func main() {
 	var text int
 	_, err := fmt.Scan(&text)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Printf("Ошибка: %s", err)
+		return
 	}
-	fmt.Println(text)
+	fmt.Printf("Введенное число: %d", text)
 }
